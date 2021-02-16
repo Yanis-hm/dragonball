@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css?family=Press+Start+2P');
+
+@keyframes move-to-left {
+  from {
+    transform: translateX(1100px)
+  } to {
+    transform: translateX(-100px)
+  }
+}
+
+@-webkit-keyframes backgroundScroll {
+  from {background-position: 0 0;}
+  to {background-position: -999999px 0;}
+}
+
+@keyframes backgroundScroll {
+  from {background-position: 0 0;}
+  to {background-position: -999999px 0;}
+}
+
+.game{
+  width: 100vw;
+  height: 100vh;
+  background-image: url('/pictures/Game1.jpg');
+  -webkit-animation: backgroundScroll 9999s linear infinite;
+  animation: backgroundScroll 9999s linear infinite;
+}
+
+.game__square{
+  width: 80px;
+  height: 60px;
+  left: 100px;
+  z-index: 100;
+  position: absolute;
+
+  &.game__square--goku {
+    background: url('/pictures/goku_fly.gif') no-repeat;
+    background-size: 80px;
+  }
+
+  &.game__square--vegeta{
+    background: url('/pictures/vegeta.gif') no-repeat;
+    background-size: 80px;
+  }
+}
+
+.game__score {
+  width: 1200px;
+  opacity: 0.5; 
+  font-size: 100px;
+  height: 100vh;
+  font-family: 'Press Start 2P';
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  z-index: -1;
+}
+ 
+
+
+.game__wall{
+  width: 100px;
+  height: 800px;
+  position: absolute;
+  animation: move-to-left 5s linear forwards;
+  z-index: 1;
+}
+
+.game__bonus {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  z-index: 2;
+}
+.game__bonus--up {
+  background: url('/pictures/Cristalballup.png');
+}
+
+.game__bonus--down {
+  background: url('/pictures/Cristalballdown.png');
+}
+
+.game__bonus--left {
+  background: url('/pictures/Cristalballleft.png');
+}
+
+.game__bonus--right {
+  background: url('/pictures/cristalball.png');
+}
+
+.game__bonus--none {
+  display: none;
+}
+
+.game__obstacle{
+  width: 100px;
+  height: 100px;
+  background: url('/pictures/finalenergyball.png');
+  position: absolute;
+  z-index: 2;
+}
+
+.game__music{
+  position: absolute;
+}
+

@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css?family=Press+Start+2P');
+
+
+.home{
+  background-image: url('/pictures/BackgroundHome.png') 
+}
+
+.header__title{
+  margin-top: 50px;
+  font-size: 60px;
+  font-family: "Press Start 2P";
+  text-align: center;
+}
+
+.header__titleJapanese{
+  margin-top: 10px;
+  font-size: 40px;
+  font-family: "Press Start 2P";
+  text-align: center;
+}
+
+.header__subtitle{
+  border: 2px solid black;
+  background-color: rgb(255, 128, 0);
+  width: 450px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px;
+  margin-top: 40px;
+  font-size: 20px;
+  font-family: "Press Start 2P";
+  text-align: center;
+}
+
+.selectPerso__perso1{
+  z-index: 50;
+  width: 200px;
+  height: 200px;
+  background: url('/pictures/goku_standing.gif') no-repeat;
+  background-size: 150px;
+  position: absolute;
+  bottom: 250px;
+  left: 300px;
+
+  &.border-goku{
+    border: 6px solid orange;
+  }
+}
+
+.selectPerso__perso2{
+  z-index: 50;
+  width: 200px;
+  height: 200px;
+  background: url('/pictures/vegeta_standing.gif') no-repeat;
+  position: absolute;
+  bottom: 250px;
+  right: 300px;
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+
+  &.border-vegeta{
+    border: 6px solid orange;
+  }
+}
+
+.instructions__button{
+  border: 2px solid black;
+  background-color: rgb(255, 128, 0);
+  width: 250px;
+  padding: 10px;
+  font-family: "Press Start 2P";
+  text-align: center;
+  position: absolute;
+  left: 450px;
+  bottom: 70px;
+}
+
+.content{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  position: absolute;
+  z-index: 1000;
+  width: 500px;
+  background-color: black;
+  padding: 30px;
+  transform: translate(350px , -800px);
+  transition: transform 1s;
+}
+
+.content__text{
+  font-family: 'Press Start 2P';
+  color: white;
+  font-family: 20px;
+  line-height: 40px;
+  text-align: center;
+}
+
+.content__picture{
+  width: 300px;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.is-clicked{
+  transform: translate(350px, -100px)
+}
+
+.info{
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  bottom: 300px;
+  background-color:  rgb(255, 128, 0);
+  padding: 5px;
+  border: 2px solid black;
+  width: 200px;
+}
+
+.info--goku{
+  left: 10px;
+}
+
+.info--vegeta{
+  right: 10px;
+}
+
+
+.info__text{
+  line-height: 30px;
+  text-align: center;
+  font-size: 17px;
+  font-family: "Press Start 2P";
+}
+
+.key{
+  height: 60px;
+  margin: auto;
+}
+
+.key--b{
+  margin: 20px auto 0 auto;
+}
+
+.text{
+  font-size: 15px;
+  font-family: "Press Start 2P";
+}
